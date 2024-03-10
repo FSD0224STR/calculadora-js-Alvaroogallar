@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+body {
+    min-height: 100vh;
+    background-color: rgb(146, 139, 139);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: rgb(26, 26, 63);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 260px;
+    height: 275px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5px;
+}
+
+.display{
+    grid-column: 1/5;
+
+    overflow: auto;
+    
+
+    font-size: 20pt;
+    font-family: "Anta", sans-serif;
+    text-align: right;
+    border: 3px solid rgb(94, 2, 2);
+
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 5px;
+
+    color: white;
+    background-color: black
+    
+}
+.display::-webkit-scrollbar {
+    width: 10px; 
+}
+.display::-webkit-scrollbar-track {
+    background: black; 
+}
+.display::-webkit-scrollbar-thumb {
+    background: rgb(8, 75, 18);
+}
+.display::-webkit-scrollbar-thumb:hover {
+    background: rgb(6, 54, 13);
+}
+
+button {
+    box-sizing: border-box;
+    border: 10% solid black ;
+    border-radius: 50%;
+    
+    font-size: 8pt;
+    font-family: "Anta", sans-serif;
+    cursor: pointer;
+    background-color: rgb(26,26,63);
+    color: white;
+    
+}
+.equal {
+    grid-column: -3/-1;
+    background-color: rgb(94, 2, 2);
+}
+.number {
+    background-color: rgb(1, 1, 109);
+    color: white;
+}
+
+.remover {
+    background-color: rgb(220, 212, 212);
+    color: black;
+}
+
+.symbol {
+    background-color: rgb(8, 75, 18);
+    color: white;
+}
+
+
